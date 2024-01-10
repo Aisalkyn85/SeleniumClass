@@ -12,7 +12,9 @@ public class XPtathContunue {
 
         //Self  = select the current node
         String text = driver.findElement(By.xpath("//a[contains(text(),'CARE Ratings')]/self::a")).getText();
+/*
         //System.out.println("Self : "+text);
+*/
 
         //Parent - Select the parent of the current node(Always one)
        // text = driver.findElement(By.xpath("//a[contains(text(),'CARE Ratings')]/parent::td")).getText();// parent does not have any text
