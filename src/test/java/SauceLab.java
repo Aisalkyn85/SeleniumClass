@@ -21,6 +21,8 @@ public class SauceLab {
       }
 
                 List<WebElement> images = driver.findElements(By.tagName("img"));
+
+
         System.out.println("Print images count "+images.size());
         driver.findElement(By.linkText("Sauce Labs Backpack")).click();
         driver.findElement(By.xpath("//button[text() = 'ADD TO CART']")).click();

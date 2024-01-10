@@ -23,6 +23,21 @@ public class PracticeLocators {
         }
 List<WebElement> images = driver.findElements(By.tagName("img"));
         System.out.println("count of images "+images.size());
+        driver.findElement(By.linkText("Sauce Labs Backpack")).click();
+        driver.findElement(By.xpath("//button[text()='ADD TO CART']")).click();
+        driver.findElement(By.xpath("//span[@class='fa-layers-counter shopping_cart_badge']")).click();
+        driver.findElement(By.linkText("CHECKOUT")).click();
+        driver.findElement(By.id("first-name")).sendKeys("Aisalkyn");
+        driver.findElement(By.xpath("//input[@id='last-name']")).sendKeys("Aidarova");
+        driver.findElement(By.id("postal-code")).sendKeys("60618");
+        driver.findElement(By.xpath("//input[@value = 'CONTINUE']")).click();
+
+
+
+
+
+
+
 
     }
 }
